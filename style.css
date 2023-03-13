@@ -3,7 +3,7 @@
   
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("yannis-papanastasopoulos-yWF2LLan-_o-unsplash.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("potonew.avif");
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +28,8 @@
     display: inline-block;
     padding: 10px 25px;
     color: rgb(255, 255, 255);
-    background-color:rgb(145, 123, 136);     
+    background-color:rgb(226, 177, 18);     
+    text-align: center;     
     text-align: center;
     cursor: pointer;
     border-radius: 8px;
@@ -37,8 +38,9 @@
   }
   
   .hero-text button:hover {
-    background-color:rgb(204, 22, 131); 
-    color: white;
+    background-color:rgb(255, 255, 255); 
+    color: rgb(226, 177, 18);     
+    text-align: center;
   }
   
   
@@ -140,14 +142,17 @@ html {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: rgb(226, 177, 18);
   text-align: center;
   cursor: pointer;
   width: 100%;
+  transition-duration: 0.4s;
+
 }
 
 .button:hover {
-  background-color: #555;
+  background-color: #ee8f14;
+  color:rgb(255, 255, 255) ;
 }
 
 @media screen and (max-width: 650px) {
@@ -158,4 +163,82 @@ html {
 }
 body{
   background-color: #ffffff;
+}
+video{
+  border-radius: 10px;
+   margin-top: 20px; 
+   margin-right: -70px;
+   z-index: 10;
+}
+.button3 {
+  border-radius: 4px;
+  background-color:rgb(226, 177, 18);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  width: 200px;
+  margin-right: -170px;
+  padding: 8px;
+}
+
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button3:hover span {
+  padding-right: 25px;
+}
+
+.button3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#navbar {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  transition: top 0.3s;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  height: 60px;
+  font-weight: bold;
+  font-family: sans-serif;
+  align-items: center;
+  z-index: 1;
+}
+
+#navbar a {
+  color: #000000;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+  color: rgb(0, 0, 0);
+
+ 
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
 }
