@@ -7,6 +7,7 @@
     
 
     <!-- Bootstrap CSS -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>webnew</title>
@@ -16,7 +17,7 @@
    
    <!-- add to any -->
     <!-- hero -->
-    <div class="hero-image">
+    <div class="hero-image" >
       
         <div class="hero-text">
           <h1 style="font-size:100px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" ><b>Welcome to <br> newrest style</b></h1>
@@ -25,39 +26,32 @@
         </div>
       </div>
       <!-- header -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <div id="navbar">
+        <div class="logo" style="font-weight: bold; font-size: 30px; font-family: sans-serif; display: flex; justify-content: end; align-items: center;">Logo</div>
+        <a href="#home">Home</a>
+        <a href="#news">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+        }
+        </script>
       <!-- header -->
       <br>
       <br>
       <!-- content bit of about -->
       <div class="row" >
-        <div class="col-sm" style="background-color: rgb(209, 209, 209); height: 630px; border-radius: 10px; margin-left: -500px; box-shadow: 0px 30px 50px rgba(255, 255, 255, 0.234); "></div>
-        <div class="col-sm"><img src="black and white.jpg" alt="" style="width: 400px; border-radius: 10px; margin-top: 30px; margin-left: -340px;"></div>
-        <div class="col-sm" style="color: black; font-size: 90px; font-family: sans-serif; margin-left: -600px; "><b>About <span style="color: rgb(98, 98, 98);"><b>Us</b></span></b>
-          <br><p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Aliquid libero nisi autem ipsam possimus perferendis explicabo, <br> debitis nostrum beatae.  Commodi iusto deleniti illo nostrum nobis <br> dignissimos! Iure maiores maxime sapiente.</p>
+        <div class="col-sm" style="background-color: rgb(226, 177, 18); height: 630px; border-radius: 10px; margin-left: -500px; box-shadow: 0px 30px 50px rgba(255, 255, 255, 0.234); "></div>
+        <div class="col-sm"><img src="mohd-zuber-saifi-pFwPM1_YI2M-unsplash.jpg" alt="" style="width: 400px; border-radius: 10px; margin-top: 30px; margin-left: -340px;"></div>
+        <div class="col-sm" style="color: black; font-size: 90px; font-family: sans-serif; margin-left: -600px; "><b>About <span style="color: rgb(226, 177, 18);text-align: center;"><b>Us</b></span></b><hr style="width: 80px; height: 4px; color:rgb(226, 177, 18) ; opacity: 100%;margin-top: -10px;">
+          <br><p style="font-size: 20px; margin-top: -100px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Aliquid libero nisi autem ipsam possimus perferendis explicabo, <br> debitis nostrum beatae.  Commodi iusto deleniti illo nostrum nobis <br> dignissimos! Iure maiores maxime sapiente.</p>
           <br><p style="font-size: 20px; margin-top: -120px;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Aliquid libero nisi autem ipsam possimus perferendis explicabo, <br> debitis nostrum beatae.  Commodi iusto deleniti illo nostrum nobis <br> dignissimos! Iure maiores maxime sapiente.</p>
         </div>
         </div>
@@ -67,12 +61,67 @@
       <br>
       <br>
       <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- Content bit of story -->
+      <div class="container text-center">
+        <div class="row">
+          <div class="col" style="font-family: sans-serif; font-family: sans-serif; font-size: 65px; ">
+            <hr style="width: 80px; height: 4px; color:rgb(226, 177, 18) ; opacity: 100%;margin-top: -5px; margin-left: 2px;">
+            <b style="margin-left: -25px;">Short</b> <span style="color: rgb(226, 177, 18);"><b>Story</b></span>
+            <p style="font-size: 20px; text-align: left; padding-top: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ea, atque non ratione quos accusamus nobis vitae ad amet eum quo quis ex quibusdam sapiente repellat minus officia dolor repudiandae.</p>
+          <button class="button3" style="margin-left: -350px;"><span><b>Readmore</b></span></button>
+
+          </div>
+          <div class="col">
+          </div>
+          <div class="col">
+            <img src="blonde.avif" alt="" style="width: 500px;border-radius: 10px; box-shadow: 90px 40px 40px rgba(226, 177, 18, 0.926); ">
+          </div>
+        </div>
+      </div>
+      <!-- Content bit of story -->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- content bit of profile -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8" style="background-color: rgb(226, 177, 18); height: 420px; margin-left: -190px; border-radius: 10px; width: 870px;">
+            <h2 style="color: aliceblue; font-family: sans-serif; font-size: 60px; margin-top: 30px; margin-left: 90px;"><b>Given to give</b></h2>
+            <hr style="width: 50px; height: 2px; color: rgb(255, 255, 255); opacity: 100%; margin-left: 90px;">  
+            <p style="font-family: sans-serif; color: aliceblue; margin-left: 90px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Consequuntur  optio tempore doloribus commodi nam modi <br> consequatur  blanditiis. Porro, quibusdam labore. <br> Repellat ea officiis quibusdam pariatur possimus <br> excepturi optio temporibus architecto?</p>          
+            <p style="font-family: sans-serif; color: aliceblue; margin-left: 90px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Consequuntur  optio tempore doloribus commodi nam modi <br> consequatur  blanditiis. Porro, quibusdam labore. <br> Repellat ea officiis quibusdam pariatur possimus <br> excepturi optio temporibus architecto?</p>          
+            
+          </div>
+          <div class="col-6 col-md-4">
+            <video width="600" controls style="margin-top: 35px; margin-left: -340px;" >
+              <source src="concert.mp4" type="video/mp4" >
+            </video>
+            
+          </div>
+        </div>
+      <!-- content bit of profile -->
+      
+      <br>
+      <br>
+      <br>
       <!--Galerry-->
       
       <div class="main" >
         <div class="about" id="gallery" style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); border-radius: 10px; height: 900px;">
             
                 <h2 style="font-size: 60px; color: black; text-align: center; background-color: rgb(255, 255, 255);padding-top: 30px;"><b>Gallery</b></h2>
+            <hr style="width: 80px; height: 4px; color:rgb(226, 177, 18) ; opacity: 100%;margin-top: px; margin-left: 540px;">
+
           <br>
           <br>
             <div class="gallery">
@@ -102,17 +151,19 @@
         <p>Resize the browser window to see that this page is responsive by the way.</p>
       </div>
       
-      <h2 style="text-align:center"><b>The stars</b></h2>
+      <h2 style="text-align:center"><b style="font-size: 60px;">The stars</b></h2>
+      <hr style="width: 80px; height: 4px; color:rgb(226, 177, 18) ; opacity: 100%;margin-top: px; margin-left: 540px;">
+
       <div class="row">
         <div class="column">
           <div class="card">
-            <img src="https://spaces.w3schools.com/images/bf8APnBxoCk.jpg" alt="Jane" style="width:100% " height="602px" >
+            <img src="https://spaces.w3schools.com/images/bf8APnBxoCk.jpg" alt="Jane" style="width:100%; height: 450px; "  >
             <div class="container">
               <h2>Mohd Salem</h2>
               <p class="title">Singer</p>
               <p>Some text that describes me lorem ipsum ipsum lorem.</p>
               <p>Mohd@gmail.com</p>
-              <p><button class="button">Contact</button></p>
+              <p><button class="button" ><b>Contact</b></button></p>
             </div>
           </div>
         </div>
@@ -125,7 +176,7 @@
               <p class="title">Singer And Guitarist</p>
               <p>Some text that describes me lorem ipsum ipsum lorem.</p>
               <p>Taylor@gmail.com</p>
-              <p><button class="button">Contact</button></p>
+              <p><button class="button"><b>Contact</b></button></p>
             </div>
           </div>
         </div>
@@ -138,13 +189,95 @@
               <p class="title">Singer</p>
               <p>Some text that describes me lorem ipsum ipsum lorem.</p>
               <p>john@gmail.com</p>
-              <p><button class="button">Contact</button></p>
+              <p><button class="button"><b>Contact</b></button></p>
             </div>
           </div>
         </div>
       </div>
       
       <!-- singer -->
+      <!-- singer colomn 2 -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="si paling menghayati.avif" alt="Jane" style="width:100%; " >
+            <div class="container">
+              <h2>Sam Quador</h2>
+              <p class="title">Singer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>sam@gmail.com</p>
+              <p><button class="button" ><b>Contact</b></button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="si-lampu-biru.avif" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Ghea</h2>
+              <p class="title">Singer And Guitarist</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>Ghea@gmail.com</p>
+              <p><button class="button"><b>Contact</b></button></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="si-paling stylish.avif" alt="John" style="width:100%">
+            <div class="container">
+              <h2>curly guy</h2>
+              <p class="title">Singer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>cg@gmail.com</p>
+              <p><button class="button"><b>Contact</b></button></p>
+            </div>
+          </div>
+        </div>
+      <!-- singer colomn 2 -->
+      <!-- singer colomn 3 -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="kribo 1.avif" alt="Jane" style="width:100%; "  >
+            <div class="container">
+              <h2>Jeda green</h2>
+              <p class="title">Singer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>Jegreen@gmail.com</p>
+              <p><button class="button" ><b>Contact</b></button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="adam lpis.avif" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Adam kelwis</h2>
+              <p class="title">Singer And Guitarist</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>kelwis@gmail.com</p>
+              <p><button class="button"><b>Contact</b></button></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="mancung.avif" alt="John" style="width:100%">
+            <div class="container">
+              <h2>jhnea grande</h2>
+              <p class="title">Singer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>Jena@gmail.com</p>
+              <p><button class="button"><b>Contact</b></button></p>
+            </div>
+          </div>
+        </div>
+        <!-- singer colomn 3 -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
 
 
