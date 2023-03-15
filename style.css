@@ -6,11 +6,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  width: 100%;
-}
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("potonew.avif");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/potonew.avif");
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -64,6 +61,7 @@ body{
     
 
 }
+
 
 .about-image-1{
     height: 600px;
@@ -119,7 +117,7 @@ html {
   padding: 50px;
   text-align: center;
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("giphy\ \(2\).gif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/giphy\ \(2\).gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
